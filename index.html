@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Codrr · AI medical billing, from note to payment</title>
+<meta name="description" content="Codrr connects to your EHR, codes every visit accurately, sends claims to the clearinghouse and handles what comes back.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="nav">
+  <div class="wrap navrow">
+    <a class="brand" href="#top" aria-label="Codrr home"><span class="mark" aria-hidden="true"></span>Codrr</a>
+    <nav class="links" aria-label="Main">
+      <a href="#how">How it works</a>
+      <a href="#coding">Coding</a>
+      <a href="#specialties">Specialties</a>
+      <a href="#security">Security</a>
+    </nav>
+    <div class="navcta">
+      <a class="ghost" href="#waitlist">Request a demo</a>
+      <a class="btn" href="#waitlist">Join the waitlist</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero wrap">
+    <h1>Codrr is AI medical billing that runs from note to payment.</h1>
+    <div class="actions">
+      <a class="btn" href="#waitlist">Join the waitlist</a>
+      <a class="btn secondary" href="#waitlist">Request a demo <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+  <figure class="canvas wrap-wide" style="--art: url(media/art/hero.jpg)">
+    <div class="window">
+      <div class="chrome"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="title">Codrr</span></div>
+      <video width="1728" height="1080" autoplay muted loop playsinline preload="auto" poster="media/s1.jpg" aria-label="A visit arrives from Epic and is coded. The biller opens a claim, checks why the visit code was chosen, approves it and sends it.">
+        <source src="media/s1.webm" type="video/webm"><source src="media/s1.mp4" type="video/mp4">
+        </video>
+    </div>
+  </figure>
+  <p class="caption wrap">A morning at a fictional practice. Patients are fictional.</p>
+
+  <section class="ehrs wrap" aria-label="EHRs Codrr works with">
+    <p class="striphead">Works with the EHR you already use</p>
+    <ul class="ehrwall">
+      <li><img src="media/ehr/epic.svg" alt="Epic" loading="lazy"></li>
+      <li><img src="media/ehr/oracle-health-powerchart.svg" alt="Oracle Health PowerChart" loading="lazy"></li>
+      <li><img src="media/ehr/meditech.svg" alt="MEDITECH" loading="lazy"></li>
+      <li><img src="media/ehr/athenahealth.png" alt="athenahealth" loading="lazy"></li>
+      <li><img src="media/ehr/eclinicalworks.webp" alt="eClinicalWorks" loading="lazy"></li>
+      <li><img src="media/ehr/nextgen.svg" alt="NextGen Healthcare" loading="lazy"></li>
+      <li><img src="media/ehr/veradigm.svg" alt="Veradigm" loading="lazy"></li>
+      <li><img class="tall" src="media/ehr/greenway.svg" alt="Greenway Health" loading="lazy"></li>
+      <li><img src="media/ehr/modmed.png" alt="ModMed" loading="lazy"></li>
+      <li><img src="media/ehr/advancedmd.svg" alt="AdvancedMD" loading="lazy"></li>
+      <li><img src="media/ehr/tebra.svg" alt="Tebra" loading="lazy"></li>
+      <li><img src="media/ehr/practicefusion.svg" alt="Practice Fusion" loading="lazy"></li>
+      <li><img class="tall" src="media/ehr/drchrono.png" alt="DrChrono" loading="lazy"></li>
+      <li><img src="media/ehr/elation.png" alt="Elation Health" loading="lazy"></li>
+      <li><img src="media/ehr/curemd.svg" alt="CureMD" loading="lazy"></li>
+      <li><img src="media/ehr/nextech.svg" alt="Nextech" loading="lazy"></li>
+      <li><img src="media/ehr/compulink.png" alt="Compulink" loading="lazy"></li>
+      <li><img src="media/ehr/azalea.png" alt="Azalea Health" loading="lazy"></li>
+      <li><img src="media/ehr/netsmart.svg" alt="Netsmart" loading="lazy"></li>
+      <li><img class="tall" src="media/ehr/criterions.png" alt="Criterions" loading="lazy"></li>
+      <li><img src="media/ehr/webpt.svg" alt="WebPT" loading="lazy"></li>
+      <li><img class="tall" src="media/ehr/raintree.png" alt="Raintree" loading="lazy"></li>
+      <li><img src="media/ehr/simplepractice.png" alt="SimplePractice" loading="lazy"></li>
+      <li><img src="media/ehr/therapynotes.png" alt="TherapyNotes" loading="lazy"></li>
+      <li><img class="tall" src="media/ehr/valant.png" alt="Valant" loading="lazy"></li>
+      <li><img src="media/ehr/dentrix.svg" alt="Dentrix" loading="lazy"></li>
+      <li><img class="tall" src="media/ehr/opendental.png" alt="Open Dental" loading="lazy"></li>
+      <li><img class="tall" src="media/ehr/curvedental.png" alt="Curve Dental" loading="lazy"></li>
+    </ul>
+  </section>
+
+  <section class="facts wrap" aria-label="Why billing breaks">
+    <p class="factlead">Billing breaks on small errors.</p>
+    <div class="factrow">
+      <div><span class="big">4 in 10</span><span>providers have at least 1 in 10 claims denied.</span></div>
+      <div><span class="big">50%</span><span>say missing or wrong claim data is the top cause.</span></div>
+    </div>
+    <p class="source mono">Source: <a href="https://www.experian.com/healthcare/resources-insights/thought-leadership/white-papers-insights/state-claims-report">Experian Health, State of Claims 2025</a></p>
+  </section>
+
+  <section id="how" class="feature wrap">
+    <div class="copy">
+      <h2>One system, from note to payment</h2>
+      <p>Codrr connects to your EHR and handles every step after the note is signed.</p>
+    </div>
+    <figure class="canvas" style="--art: url(media/art/river.jpg)">
+      <div class="flow" role="img" aria-label="A signed note moves from the EHR to Codrr, then to the clearinghouse and the payer. Payments and denials come back to Codrr.">
+        <div class="node"><span class="mono">01</span><strong>Your EHR</strong><span>Signed note</span></div>
+        <div class="link"></div>
+        <div class="node accent"><span class="mono">02</span><strong>Codrr</strong><span>Codes and checks</span></div>
+        <div class="link"></div>
+        <div class="node"><span class="mono">03</span><strong>Clearinghouse</strong><span>Claim sent</span></div>
+        <div class="link"></div>
+        <div class="node"><span class="mono">04</span><strong>Payer</strong><span>Paid or denied</span></div>
+        <div class="return"><span class="mono">Payments posted and denials worked in Codrr</span></div>
+      </div>
+    </figure>
+    <ol class="steps">
+      <li><span class="mono">01</span><h3>Connects to your EHR</h3><p>Signed notes come in on their own.</p></li>
+      <li><span class="mono">02</span><h3>Codes accurately</h3><p>Every code is backed by the note and checked against CMS rules.</p></li>
+      <li><span class="mono">03</span><h3>Sends to the clearinghouse</h3><p>Your team approves and sends each claim in two clicks.</p></li>
+      <li><span class="mono">04</span><h3>Handles what comes back</h3><p>Payments are posted and denials are worked.</p></li>
+    </ol>
+  </section>
+
+  <section id="coding" class="feature wrap">
+    <div class="copy">
+      <h2>Every code, with its reason</h2>
+      <p>Codrr chooses the most specific codes the note supports. Open any code to see the exact words in the note that put it on the claim.</p>
+    </div>
+    <figure class="canvas" style="--art: url(media/art/coast.jpg)">
+      <div class="window narrow">
+        <div class="chrome"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="title">Codrr · Diagnoses</span></div>
+        <video width="728" height="906" autoplay muted loop playsinline preload="metadata" poster="media/s2.jpg" aria-label="The diagnoses on the same claim, opening why each one was chosen">
+          <source src="media/s2.webm" type="video/webm"><source src="media/s2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </figure>
+    <div class="numbers">
+      <div><span class="big">98,403</span><span>ICD-10-CM diagnosis codes</span></div>
+      <div><span class="big">17,190</span><span>CPT and HCPCS procedure codes</span></div>
+      <div><span class="big">1.7M</span><span>NCCI coding edits</span></div>
+    </div>
+  </section>
+
+  <section class="feature wrap">
+    <div class="copy">
+      <h2>Your team has the final say</h2>
+      <p>Change which diagnoses a service points to, set the charge from your area's Medicare rate, or adjust units and modifiers, right on the code.</p>
+    </div>
+    <figure class="canvas" style="--art: url(media/art/plains.jpg)">
+      <div class="window narrow">
+        <div class="chrome"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="title">Codrr · Services</span></div>
+        <video width="728" height="964" autoplay muted loop playsinline preload="metadata" poster="media/s3.jpg" aria-label="On the ECG line: why it was billed, which diagnoses it points to, its charge with Medicare rate options, and its units and modifiers">
+          <source src="media/s3.webm" type="video/webm"><source src="media/s3.mp4" type="video/mp4">
+        </video>
+      </div>
+    </figure>
+  </section>
+
+  <section class="feature wrap">
+    <div class="copy">
+      <h2>Caught before the payer sees it</h2>
+      <p>Every claim is checked against NCCI edits and payer rules before your team sends it. Codrr explains each problem and takes you to the fix.</p>
+    </div>
+    <figure class="canvas" style="--art: url(media/art/meadow.jpg)">
+      <div class="window">
+        <div class="chrome"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="title">Codrr · Claim</span></div>
+        <video width="1728" height="1080" autoplay muted loop playsinline preload="metadata" poster="media/s4.jpg" aria-label="A claim held because the member ID is missing. The biller clicks Fix this, types the ID, and the claim is ready to review">
+          <source src="media/s4.webm" type="video/webm"><source src="media/s4.mp4" type="video/mp4">
+        </video>
+      </div>
+    </figure>
+  </section>
+
+  <section class="feature wrap">
+    <div class="copy">
+      <h2>Payments posted, denials sorted</h2>
+      <p>Codrr reads every remittance, balances it to the cent and gives each unpaid dollar a reason and a next step.</p>
+    </div>
+    <figure class="canvas" style="--art: url(media/art/valley.jpg)">
+      <div class="window">
+        <div class="chrome"><span class="dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="title">Codrr · Remittances</span></div>
+        <video width="1728" height="1080" autoplay muted loop playsinline preload="metadata" poster="media/s5.jpg" aria-label="The biller loads a Medicare remittance. It posts balanced, with each unpaid amount given a reason and a next step">
+          <source src="media/s5.webm" type="video/webm"><source src="media/s5.mp4" type="video/mp4">
+        </video>
+      </div>
+    </figure>
+  </section>
+
+  <section class="section wrap">
+    <h2>What Codrr takes off your team</h2>
+    <div class="work">
+      <div><h3>Charge entry</h3><p>Visits arrive from the EHR as claims, already filled in.</p></div>
+      <div><h3>Code lookup</h3><p>Diagnosis and procedure codes chosen from the note.</p></div>
+      <div><h3>Visit levels</h3><p>Calculated from documented decision making or time.</p></div>
+      <div><h3>Claim scrubbing</h3><p>NCCI edits, unit limits and payer rules checked first.</p></div>
+      <div><h3>Payment posting</h3><p>Every remittance read and balanced automatically.</p></div>
+      <div><h3>Denial triage</h3><p>Every denial sorted by reason with its next step.</p></div>
+    </div>
+  </section>
+
+  <section id="specialties" class="section wrap">
+    <h2>Built for every specialty</h2>
+    <p class="sublede">If your practice bills with ICD-10, CPT or HCPCS codes, or CDT for dental, Codrr handles it.</p>
+    <ul class="speclist">
+      <li>Primary care</li>
+      <li>Internal medicine</li>
+      <li>Family medicine</li>
+      <li>Pediatrics</li>
+      <li>Nurse practitioners</li>
+      <li>Urgent care</li>
+      <li>Cardiology</li>
+      <li>Pulmonology</li>
+      <li>Endocrinology</li>
+      <li>Nephrology</li>
+      <li>Gastroenterology</li>
+      <li>Neurology</li>
+      <li>Rheumatology</li>
+      <li>Oncology</li>
+      <li>Dermatology</li>
+      <li>Orthopedics</li>
+      <li>Pain management</li>
+      <li>Podiatry</li>
+      <li>Chiropractic</li>
+      <li>OB/GYN</li>
+      <li>Urology</li>
+      <li>ENT</li>
+      <li>Ophthalmology</li>
+      <li>Optometry</li>
+      <li>Behavioral health</li>
+      <li>Psychiatry</li>
+      <li>Physical therapy</li>
+      <li>Occupational therapy</li>
+      <li>Speech therapy</li>
+      <li>Anesthesia and CRNAs</li>
+      <li>Radiology</li>
+      <li>Dental</li>
+    </ul>
+  </section>
+
+  <section id="security" class="section wrap">
+    <h2>Built for HIPAA</h2>
+    <div class="security">
+      <div><h3>BAA</h3><p>Signed with every practice before any patient data is shared.</p></div>
+      <div><h3>Vendors under BAA</h3><p>Patient data only goes to services that have signed a BAA.</p></div>
+      <div><h3>Audit log</h3><p>Every edit, approval, claim and payment is recorded.</p></div>
+      <div><h3>SOC 2 Type II</h3><p>Audit underway before launch.</p></div>
+    </div>
+  </section>
+
+  <section id="waitlist" class="final" style="--art: url(media/art/forest.jpg)">
+    <div class="finalcard">
+      <h2>Bill every visit, accurately.</h2>
+      <form class="waitlist" data-endpoint="" data-email="hello@codrr.com">
+        <label class="sr" for="email">Work email</label>
+        <input id="email" name="email" type="email" required placeholder="Work email" autocomplete="email">
+        <button class="btn" type="submit">Join the waitlist</button>
+      </form>
+      <p class="formnote small" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer wrap">
+  <div class="cols">
+    <div><h4>Product</h4><a href="#how">EHR integration</a><a href="#coding">Coding</a><a href="#how">Claims</a><a href="#how">Denials</a></div>
+    <div><h4>Specialties</h4><a href="#specialties">Primary care</a><a href="#specialties">Specialists</a><a href="#specialties">Therapy</a><a href="#specialties">Dental</a></div>
+    <div><h4>Company</h4><a href="#security">Security</a><a href="#waitlist">Contact</a></div>
+  </div>
+  <div class="legal small"><span>© 2026 Codrr</span><span>HIPAA · BAA · SOC 2 Type II in progress</span><span>CPT is a registered trademark of the American Medical Association.</span></div>
+</footer>
+
+<script>
+  // Videos play only on screen, and not at all for people who prefer less motion.
+  const videos = [...document.querySelectorAll("video")];
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) videos.forEach((video) => { video.removeAttribute("autoplay"); video.pause(); });
+  else {
+    const seen = new IntersectionObserver((entries) => entries.forEach((entry) => entry.isIntersecting ? entry.target.play().catch(() => {}) : entry.target.pause()), { threshold: 0.25 });
+    videos.forEach((video) => seen.observe(video));
+  }
+  // Until a signup service is connected, the form opens an email so no request is lost.
+  const form = document.querySelector(".waitlist");
+  const note = document.querySelector(".formnote");
+  form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const data = Object.fromEntries(new FormData(form));
+    if (form.dataset.endpoint) {
+      try {
+        const response = await fetch(form.dataset.endpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) });
+        if (!response.ok) throw new Error();
+        note.textContent = "You're on the list.";
+        form.reset();
+      } catch { note.textContent = "That didn't go through. Try again."; }
+      return;
+    }
+    location.href = `mailto:${form.dataset.email}?subject=${encodeURIComponent("Codrr waitlist")}&body=${encodeURIComponent(data.email)}`;
+  });
+</script>
+</body>
+</html>
